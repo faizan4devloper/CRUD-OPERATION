@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: #ee534f;
+  /* border: 10px solid #000; */
+}
+
+.header h5 {
+  font-size: 28px;
+  /* font-family: sans-serif;
+  
+  */
+  color: #fff;
+  font-weight: bold;
+}
+.sub-header {
+  width: 100%;
+  height: 100%;
+  /* background: #000; */
+  display: flex;
+  padding: 30px;
+}
+.sub-header .left-box {
+  width: 50%;
+  height: 100px;
+  /* background: #024505; */
+}
+.sub-header .right-box {
+  width: 50%;
+  height: 100px;
+  /* background: #00fbf7; */
+}
+
+.sub-header .left-box button {
+  padding: 13px;
+  outline: none;
+  border: none;
+  background: #4286f5;
+  font-size: 15px;
+  color: white;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.sub-header .right-box input {
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 5px solid #4286f5;
+  padding: 10px;
+  margin: 0 10px;
+  width: 460px;
+}
+.right-box .search {
+  padding: 15px 20px;
+  background: #ee534f;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+input::placeholder {
+  color: rgb(121, 125, 130);
+  font-size: 18px;
+}
+
+.table-container {
+  width: 100%;
+  padding: 30px;
+}
+.table-container table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-collapse: collapse;
+}
+.table-container table tr th {
+  border-right: 1px solid #ccc;
+  padding: 30px 0 0;
+  /* font-family: sans-serif; */
+  font-size: 20px;
+}
+.table-container table tr td {
+  border: 1px solid #ccc;
+  padding: 10px 0 5px 0;
+  text-align: center;
+}
+.table-container table tr td button {
+  padding: 5px 0 5px;
+  width: 40%;
+  outline: none;
+  border: none;
+  background: #4286f5;
+  font-size: 15px;
+  color: white;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* margin: 0px 10px; */
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* MODAL styling */
+
+.modal {
+  width: 60%;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 24%;
+  background-color: #f2f2f2;
+  transform: translate(-50px, -50%);
+  display: flex;
+  border-top: 20px groove #4286f5;
+  /* z-index: -10; */
+  transition: 0.2s ease-in-out;
+
+  /* position: relative; */
+}
+.hidden {
+  /* width: 60%; */
+  opacity: 0;
+  z-index: -1;
+}
+.modal .close-icon {
+  position: absolute;
+  right: -1px;
+  bottom: 98%;
+  font-size: 30px;
+  color: rgb(255, 0, 0);
+  /* padding: 30px; */
+  background: white;
+}
+.modal .left-modal {
+  width: 28%;
+  height: 100%;
+  background: #f2f2f2;
+  border-right: 5px solid #4286f5;
+}
+
+.modal .left-modal .img-box {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  padding: 20px;
+  position: relative;
+}
+.modal .left-modal .img-box img {
+  border-radius: 50%;
+  border: 5px solid rgb(205, 192, 192);
+}
+.modal .left-modal .img-box i {
+  font-size: 40px;
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  color: #4286f5;
+}
+.modal .left-modal .img-box input {
+  position: absolute;
+  font-size: 4px;
+  left: 112px;
+  top: 17%;
+  opacity: 0;
+  padding: 40px;
+  /* margin-top: 350px; */
+}
+
+.modal .right-modal {
+  width: 70%;
+  height: 100%;
+  background: #f2f2f2;
+  padding: 30px;
+  /* display: inline-flexbox; */
+}
+
+.modal .right-modal .input-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.modal .right-modal .input-box label {
+  font-size: 20px;
+  /* font-family: sans-serif; */
+  font-weight: bold;
+  padding: 10px;
+}
+.modal .right-modal .input-box input {
+  width: 60%;
+  border: none;
+  border-bottom: 5px solid #4286f5;
+  margin: 10px 0;
+  font-size: 18px;
+  /* padding-bottom: 8px; */
+  outline: none;
+  background: transparent;
+}
+
+.modal .right-modal button {
+  padding: 13px 81px;
+  margin: 20px 2px;
+  background: #4286f5;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+/* .modal .right-modal .input-box button:disabled {
+  filter: grayscale(80%);
+} */
